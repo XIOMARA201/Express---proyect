@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const checkerHTTPMethod = require('./http-method-checker');
+const checkerHTTPMethod = require('../middleware/http-method-checker');
 
 module.exports = function (tasks) {
     const handleErrors = (req, res, next) => {
